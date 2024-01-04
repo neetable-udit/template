@@ -1,0 +1,45 @@
+version: "3"
+
+dotenv: ["keys.env"]
+
+tasks:
+  get:
+    label: "Get all the dependencies"
+    cmds:
+      - flutter pub get
+
+  renameapp:
+    label: "Rename App name"
+    cmds:
+      - dart pub global activate rename
+      - export PATH="$PATH":"$HOME/.pub-cache/bin"
+      - rename getAppName
+      - rename setAppName --value {{.name}}
+
+  renamebundle:
+    label: "Rename Bundle"
+    cmds:
+      - dart pub global activate rename
+      - export PATH="$PATH":"$HOME/.pub-cache/bin"
+      - rename getBundleId
+      - rename setBundleId --value {{.bundle}}
+
+  copywriting:
+    label: "Generates Copywriting"
+    cmds:
+      - flutter pub get
+      - cp -r .dart_tool/flutter_gen/gen_l10n lib/l10n
+
+  releaseapk:
+    label: "Create Release Apk"
+    cmds:
+      - flutter clean
+      - flutter pub get
+      - flutter build apk --release --no-tree-shake-icons
+
+  appbundle:
+    label: "Create Release AppBundle"
+    cmds:
+      - flutter clean
+      - flutter pub get
+      - flutter build appbundle --release --no-tree-shake-icons
