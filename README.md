@@ -45,3 +45,47 @@ To generate release app bundle
 ```sh
 task appbundle
 ```
+
+
+# Features
+
+| Feature                                                              | Status |
+|----------------------------------------------------------------------|--------|
+| Platforms: Android, iOS, web | 🆕
+| Scalable Architecture using [getx](https://bloclibrary.dev/)         | 🆕   
+| Navigation using [go_router](https://pub.dev/packages/go_router)     | ✅ 
+| Scalable App Styling                                                 | 🆕 
+| GitHub Actions - code and formatting check                           | 🕣 
+| Responsive Design                                                    | ✅ 
+| Profile Page                                                         | ✅ 
+| Settings Page: sign out, app version...                              | ✅ 
+| Legal: Terms, Policy, Data Deletion                                  | 🕣 
+| Google Fonts                                                         | ✅ 
+| Sign in and Sign Up Pages                                            | ✅ 
+| Input Validators                                                     | ✅ 
+| Cached network image                                                 | ✅ 
+| Email Support                                                        | 🕣
+| Firebase Project Integration                                         | 🕣 
+| Firebase Authentication                                              | 🕣 
+| Firebase Remote Config                                               | 🕣
+| Firebase Crashlytics                                                 | 🕣 
+| Firebase Firestore                                                   | 🕣
+| Firebase Analytics                                                   | 🕣
+| Firebase Storage                                                     | 🕣 
+| Amplify Auth UI                                                      | 🕣 
+| In App Purchases (RevenueCat)                                        | 🕣 
+| App Store Review Request                                             | 🕣
+| Local Notifications                                                  | 🕣 
+| Remote Notifications (Firebase)                                      | 🕣
+| HTTP Requests                                                        | 🕣 
+| Local Storage                                                        | 🕣 
+| Permissions                                                          | 🕣 
+| Environments                                                         | 🕣 
+| Localization                                                         | 🕣 
+| Dark Mode                                                            | 🕣
+| Connectivity check                                                   | 🕣
+| Hive - local database                                                | 🕣
+| MixPanel - analytics                                                 | 🕣
+| Android - Release Signing                                            | 🕣 
+| Onboarding                                                           | 🕣 
+| Forgot Password                                                      | 🕣 
