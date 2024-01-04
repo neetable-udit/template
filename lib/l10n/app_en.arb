@@ -1,0 +1,7 @@
+{ 
+    "hello": "Hello,",
+    "exitConfirmation" : "Are you sure you want to exit?",
+    "yes" : "Yes",
+    "no" : "No",
+    "noInternet": "your device is not connected\nto the internet"
+}
