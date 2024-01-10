@@ -86,21 +86,21 @@ task  appbundle
 | Scalable Architecture using GetX |✅|
 | [Dynamic App Styling](https://appainter.dev) |✅|
 | Responsive Design |✅|
-| Profile Page | ✅|
-| Settings Page: sign out, app version... | ✅
-| Sign in and Sign Up Pages |✅|
-| Input Validators | ✅
-| Cached network image | ✅
+| Renaming App |✅|
+| Renaming AppBundle |✅|
+| Amplify Auth UI | ✅ |
+| AppIcon Customisation | ✅ |
+| Profile Page | 🕣|
+| Basic Settings Page | 🕣 |
+| Sign in and Sign Up Pages |🕣|
+| Input Validators | 🕣 |
+| Cached network image | 🕣 |
 | Legal: Terms, Policy, Data Deletion |🕣|
 | Email Support | 🕣
 | Firebase Project Integration | 🕣
-| Firebase Authentication | 🕣
 | Firebase Remote Config | 🕣
 | Firebase Crashlytics | 🕣
-| Firebase Firestore | 🕣
 | Firebase Analytics | 🕣
-| Firebase Storage | 🕣
-| Amplify Auth UI | 🕣
 | In App Purchases (RevenueCat) | 🕣
 | App Store Review Request | 🕣
 | Local Notifications | 🕣
