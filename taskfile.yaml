@@ -30,6 +30,22 @@ tasks:
       - flutter pub get
       - cp -r .dart_tool/flutter_gen/gen_l10n lib/l10n
 
+  themelight:
+    label: "Generates LightTheme"
+    cmds:
+      - echo -n "final Map<String, dynamic> lightTheme = " > lib/theme/light_theme.dart
+      - jq -c '.' {{.path}}  >> lib/theme/light_theme.dart
+      - echo ";" >> lib/theme/light_theme.dart
+      - echo "Light Theme Generated Successfully!"
+
+  themedark:
+    label: "Generates DarkTheme"
+    cmds:
+      - echo -n "final Map<String, dynamic> darkTheme = " > lib/theme/dark_theme.dart
+      - jq -c '.' {{.path}}  >> lib/theme/dark_theme.dart
+      - echo ";" >> lib/theme/dark_theme.dart
+      - echo "Dark Theme Generated Successfully!"
+
   releaseapk:
     label: "Create Release Apk"
     cmds:

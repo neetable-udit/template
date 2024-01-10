@@ -18,28 +18,7 @@ import 'package:sentry_flutter/sentry_flutter.dart';
 class CoreService {
   static ThemeData getAppTheme({bool authenticationTheme = false}) {
     ThemeData? theme = ThemeDecoder.decodeThemeData(lightTheme);
-
-    if (theme == null || authenticationTheme) {
-      return ThemeData(
-        colorScheme: const ColorScheme(
-          brightness: Brightness.light,
-          primary: Color(0xff407050),
-          onPrimary: Color(0xffFBF8EC),
-          secondary: Color.fromARGB(255, 52, 66, 57),
-          onSecondary: Color(0xff407050),
-          error: Colors.red,
-          onError: Colors.red,
-          background: Color(0xffFBF8EC),
-          onBackground: Color(0xff407050),
-          surface: Color(0xffFBF8EC),
-          onSurface: Colors.black,
-        ),
-        inputDecorationTheme: theme?.inputDecorationTheme,
-        tabBarTheme: theme?.tabBarTheme,
-      ); //default themedata
-    } else {
-      return theme;
-    }
+    return theme ?? ThemeData();
   }
 
   static FirebaseAnalyticsObserver getNavigationObserver() {
